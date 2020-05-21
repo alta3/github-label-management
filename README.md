@@ -1,6 +1,8 @@
  
 # alta3 github-automation
 
+This repo is a step-by-step guide/script for managing organization wide github issue labels.
+
 ## Prerequisites
 
 - Create a github [Personal access token](https://github.com/settings/tokens)
