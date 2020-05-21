@@ -1,7 +1,7 @@
  
 # alta3 github-automation
 
-This repo is a step-by-step guide/script for managing organization wide github issue labels.
+This repo is a step-by-step guide/script for managing organization wide github issue labels across all projects.
 
 Result:  
 ![Github labels](https://static.alta3.com/blog/github-labels.png)
