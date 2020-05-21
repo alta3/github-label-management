@@ -3,6 +3,9 @@
 
 This repo is a step-by-step guide/script for managing organization wide github issue labels.
 
+Result:
+![Github labels](https://static.alta3.com/blog/github-labels.png)
+
 ## Prerequisites
 
 - Create a github [Personal access token](https://github.com/settings/tokens)
