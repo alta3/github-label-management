@@ -3,7 +3,7 @@
 
 This repo is a step-by-step guide/script for managing organization wide github issue labels.
 
-Result:
+Result:  
 ![Github labels](https://static.alta3.com/blog/github-labels.png)
 
 ## Prerequisites
