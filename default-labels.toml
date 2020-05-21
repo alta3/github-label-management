@@ -1,0 +1,114 @@
+["Priority: Critical"]
+color = "e11d21"
+name = "Priority: Critical"
+description = ""
+
+["Priority: High"]
+color = "eb6420"
+name = "Priority: High"
+description = ""
+
+["Priority: Low"]
+color = "009800"
+name = "Priority: Low"
+description = ""
+
+["Priority: Medium"]
+color = "fbca04"
+name = "Priority: Medium"
+description = ""
+
+["Status: Abandoned"]
+color = "000000"
+name = "Status: Abandoned"
+description = ""
+
+["Status: Accepted"]
+color = "009800"
+name = "Status: Accepted"
+description = ""
+
+["Status: Available"]
+color = "bfe5bf"
+name = "Status: Available"
+description = ""
+
+["Status: Blocked"]
+color = "e11d21"
+name = "Status: Blocked"
+description = ""
+
+["Status: Completed"]
+color = "006b75"
+name = "Status: Completed"
+description = ""
+
+["Status: Duplicate"]
+color = "000000"
+name = "Status: Duplicate"
+description = ""
+
+["Status: Help Wanted"]
+color = "008672"
+name = "Status: Help Wanted"
+description = ""
+
+["Status: In Progress"]
+color = "cccccc"
+name = "Status: In Progress"
+description = ""
+
+["Status: On Hold"]
+color = "e11d21"
+name = "Status: On Hold"
+description = ""
+
+["Status: Pending"]
+color = "fef2c0"
+name = "Status: Pending"
+description = ""
+
+["Status: Review Needed"]
+color = "fbca04"
+name = "Status: Review Needed"
+description = ""
+
+["Status: Revision Needed"]
+color = "e11d21"
+name = "Status: Revision Needed"
+description = ""
+
+["Status: Wont Fix"]
+color = "ffffff"
+name = "Status: Wont Fix"
+description = ""
+
+["Type: Bug"]
+color = "e11d21"
+name = "Type: Bug"
+description = ""
+
+["Type: Documentation"]
+color = "0075ca"
+name = "Type: Documentation"
+description = ""
+
+["Type: Enhancement"]
+color = "84b6eb"
+name = "Type: Enhancement"
+description = ""
+
+["Type: Maintenance"]
+color = "fbca04"
+name = "Type: Maintenance"
+description = ""
+
+["Type: Playbook"]
+color = "84db9b"
+name = "Type: Playbook"
+description = ""
+
+["Type: Question"]
+color = "cc317c"
+name = "Type: Question"
+description = ""
