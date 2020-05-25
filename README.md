@@ -27,7 +27,7 @@ python -m pip install -r requirements.txt
 ```
 GITHUB_USER_TOKEN="<YOUR_TOKEN_HERE>"
 LABELS_TOKEN=${GITHUB_USER_TOKEN}
-LABELS_USER="<YOUR_USERNAME>"
+LABELS_USERNAME="<YOUR_USERNAME>"
 
 ```
 
@@ -51,5 +51,5 @@ python list-all-repos.py | xargs -I {} labels fetch --owner alta3 --repo {} --fi
 View/edit `default-labels.toml` for the list of labels.
 
 ```
-python list-all-repos.py | xargs -I {} labels sync --owner alta3 --repo {} --filename all-repos-labels.toml
+python list-all-repos.py | xargs -I {} labels sync --owner alta3 --repo {} --filename default-labels.toml
 ```
