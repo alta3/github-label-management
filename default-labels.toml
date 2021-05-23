@@ -11,7 +11,7 @@ description = ""
 ["Priority: Low"]
 color = "009800"
 name = "Priority: Low"
-description = ""
+description = "Synonym for On Hold"
 
 ["Priority: Medium"]
 color = "fbca04"
@@ -21,7 +21,7 @@ description = ""
 ["Status: Abandoned"]
 color = "000000"
 name = "Status: Abandoned"
-description = ""
+description = "Only for closed issues"
 
 ["Status: Accepted"]
 color = "009800"
@@ -103,6 +103,11 @@ color = "fbca04"
 name = "Type: Maintenance"
 description = ""
 
+["Type: Infrastructure"]
+color = "fbca04"
+name = "Type: Infrastructure"
+description = ""
+
 ["Type: Playbook"]
 color = "84db9b"
 name = "Type: Playbook"
@@ -112,3 +117,48 @@ description = ""
 color = "cc317c"
 name = "Type: Question"
 description = ""
+
+["Type: Course Development"]
+color =  "#97adf4"
+name = "Type: Course Development"
+description = ""
+
+["Type: Research"]
+color =  "#3648aa"
+name = "Type: Research"
+description = ""
+
+["Priority: Needs Triage"]
+color =  "#000000"
+name = "Priority: Needs Triage"
+description = ""
+
+["Type: Meta"]
+color =  "#000000"
+name = "Type: Meta"
+description = "I award you no points. Links to other issues"
+
+["Status: No Activity"]
+color =  "#000000"
+name = "Status: No Activity"
+description = "Pre-abandoned, still open"
+
+["Difficulty: 🟢"]
+color =  "#333333"
+name = "Difficulty: 🟢"
+description = "Beginner"
+
+["Difficulty: 🟦"]
+color =  "#333333"
+name = "Difficulty: 🟦"
+description = "Intermediate"
+
+["Difficulty: ♢"]
+color =  "#333333"
+name = "Difficulty: ♢"
+description = "Expert"
+
+["Difficulty: ♢♢"]
+color =  "#333333"
+name = "Difficulty: ♢♢"
+description = "Expert Only"
