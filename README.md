@@ -36,6 +36,8 @@ LABELS_USERNAME="<YOUR_USERNAME>"
 **List all alta3 repos**:
 
 ```
+set -a
+source .env
 python list-all-repos.py
 ```
 
