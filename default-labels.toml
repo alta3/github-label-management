@@ -1,3 +1,23 @@
+["Difficulty: ♢"]
+color = "333333"
+name = "Difficulty: ♢"
+description = ""
+
+["Difficulty: ♢♢"]
+color = "333333"
+name = "Difficulty: ♢♢"
+description = ""
+
+["Difficulty: 🟢"]
+color = "C2E0C6"
+name = "Difficulty: 🟢"
+description = ""
+
+["Difficulty: 🟦"]
+color = "BFD4F2"
+name = "Difficulty: 🟦"
+description = ""
+
 ["Priority: Critical"]
 color = "e11d21"
 name = "Priority: Critical"
@@ -11,17 +31,22 @@ description = ""
 ["Priority: Low"]
 color = "009800"
 name = "Priority: Low"
-description = "Synonym for On Hold"
+description = ""
 
 ["Priority: Medium"]
 color = "fbca04"
 name = "Priority: Medium"
 description = ""
 
+["Priority: Needs Triage"]
+color = "B60205"
+name = "Priority: Needs Triage"
+description = ""
+
 ["Status: Abandoned"]
 color = "000000"
 name = "Status: Abandoned"
-description = "Only for closed issues"
+description = ""
 
 ["Status: Accepted"]
 color = "009800"
@@ -58,6 +83,11 @@ color = "cccccc"
 name = "Status: In Progress"
 description = ""
 
+["Status: No Activity"]
+color = "222222"
+name = "Status: No Activity"
+description = ""
+
 ["Status: On Hold"]
 color = "e11d21"
 name = "Status: On Hold"
@@ -88,6 +118,16 @@ color = "e11d21"
 name = "Type: Bug"
 description = ""
 
+["Type: Course Development"]
+color = "97adf4"
+name = "Type: Course Development"
+description = ""
+
+["Type: Dev"]
+color = "734AD3"
+name = "Type: Dev"
+description = ""
+
 ["Type: Documentation"]
 color = "0075ca"
 name = "Type: Documentation"
@@ -103,9 +143,14 @@ color = "fbca04"
 name = "Type: Maintenance"
 description = ""
 
-["Type: Infrastructure"]
-color = "fbca04"
-name = "Type: Infrastructure"
+["Type: Meta"]
+color = "000000"
+name = "Type: Meta"
+description = ""
+
+["Type: New Feature"]
+color = "F29BAB"
+name = "Type: New Feature"
 description = ""
 
 ["Type: Playbook"]
@@ -118,47 +163,7 @@ color = "cc317c"
 name = "Type: Question"
 description = ""
 
-["Type: Course Development"]
-color =  "#97adf4"
-name = "Type: Course Development"
-description = ""
-
 ["Type: Research"]
-color =  "#3648aa"
+color = "3648aa"
 name = "Type: Research"
 description = ""
-
-["Priority: Needs Triage"]
-color =  "#000000"
-name = "Priority: Needs Triage"
-description = ""
-
-["Type: Meta"]
-color =  "#000000"
-name = "Type: Meta"
-description = "I award you no points. Links to other issues"
-
-["Status: No Activity"]
-color =  "#000000"
-name = "Status: No Activity"
-description = "Pre-abandoned, still open"
-
-["Difficulty: 🟢"]
-color =  "#333333"
-name = "Difficulty: 🟢"
-description = "Beginner"
-
-["Difficulty: 🟦"]
-color =  "#333333"
-name = "Difficulty: 🟦"
-description = "Intermediate"
-
-["Difficulty: ♢"]
-color =  "#333333"
-name = "Difficulty: ♢"
-description = "Expert"
-
-["Difficulty: ♢♢"]
-color =  "#333333"
-name = "Difficulty: ♢♢"
-description = "Expert Only"
