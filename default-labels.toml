@@ -83,6 +83,11 @@ color = "cccccc"
 name = "Status: In Progress"
 description = ""
 
+["Status: Needs More Info"]
+color = "f02fff"
+name = "Status: Needs More Info"
+description = ""
+
 ["Status: No Activity"]
 color = "222222"
 name = "Status: No Activity"
@@ -104,7 +109,7 @@ name = "Status: Review Needed"
 description = ""
 
 ["Status: Revision Needed"]
-color = "e11d21"
+color = "e17d21"
 name = "Status: Revision Needed"
 description = ""
 
