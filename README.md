@@ -3,7 +3,18 @@
 
 This repo is a step-by-step guide/script for managing organization wide github issue labels across all projects.
 
-Result:  
+
+Before you run the code, explore the directory you just cloned:
+
+.
+├── README.md            - You are reading this NOW
+├── default-labels.toml  - This is the label format that you are about to apply to ALL ALTA3 REPOS. 
+├── list-all-repos.py    - Discovers all alta3 repos and clobbers existing lalels with above "default-labels.toml" Making them all identicle.
+├── repo-labels          - Check this directory. (Look, don't touch!) These files will all overwritten soon
+└── requirements.txt     - Classic python dependancies stuff
+
+
+The Result: all Alta3 repsoitories will have the same github labels 
 ![Github labels](https://static.alta3.com/blog/github-labels.png)
 
 ## Prerequisites
@@ -22,12 +33,16 @@ python -m pip install --upgrade pip wheel
 python -m pip install -r requirements.txt
 ```
 
-**Example `.env` file**:
+**Edit your `.env` file**:
+  Replace "xxxxxxxxxxxxxx" with your token from above.
+  Replace "yyyyyyyyyyyyyy" with your user name.
+
+vim .env
 
 ```
-GITHUB_USER_TOKEN="<YOUR_TOKEN_HERE>"
+GITHUB_USER_TOKEN="xxxxxxxxxxxxxxxx"
 LABELS_TOKEN=${GITHUB_USER_TOKEN}
-LABELS_USERNAME="<YOUR_USERNAME>"
+LABELS_USERNAME="yyyyyyyyyyy"
 
 ```
 
@@ -48,10 +63,18 @@ mkdir -p repo-labels
 python list-all-repos.py | xargs -I {} labels fetch --owner alta3 --repo {} --filename repo-labels/{}-labels.toml
 ```
 
-**Setup a common set of labels for every repo**
+**View the labels you are about to apply to Alta3's repos. If this is your first time through, then look, dont touch. The default labels have been working well**
 
-View/edit `default-labels.toml` for the list of labels.
+```
+vim default-labels.toml
+```
+
+**Push the `default-labels.toml` to every Alta3 Repository
 
 ```
 python list-all-repos.py | xargs -I {} labels sync --owner alta3 --repo {} --filename default-labels.toml
 ```
+
+That's it!  The labels have been pushed to all reposities. 
+Don't like them?  Then edit `default-labels.toml` and run the steps again.
+
