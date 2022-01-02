@@ -1,5 +1,5 @@
  
-# alta3 github-automation
+# github label management
 
 This repo is a step-by-step guide/script for managing organization wide github issue labels across all projects.
 
@@ -9,15 +9,15 @@ Before you run the code, explore the directory you just cloned:
 ```
 .
 ├── README.md            - You are reading this NOW
-├── default-labels.toml  - This is the label format that you are about to apply to ALL ALTA3 REPOS. 
-├── list-all-repos.py    - Discovers all alta3 repos and clobbers existing lalels with above "default-labels.toml" Making them all identicle.
+├── default-labels.toml  - This is the label format that you are about to apply to ALL OF YOUR ORGANIZATIONS' REPOS. 
+├── list-all-repos.py    - Discovers all of your orgainizations repos and clobbers existing lalels with above "default-labels.toml" Making them all identicle.
 ├── repo-labels          - Check this directory. (Look, don't touch!) These files will all overwritten soon
 └── requirements.txt     - Classic python dependancies stuff
 └── .env                 - This file is NOT HERE yet. You will add it below
 ```
 
 
-The Result: all Alta3 repsoitories will have the same github labels 
+The Result: all of your organizations' repsoitories will have the same github labels 
 ![Github labels](https://static.alta3.com/blog/github-labels.png)
 
 ## Prerequisites
@@ -60,7 +60,7 @@ vim default-labels.toml
 
 ### Run
 
-**List all alta3 repos**:
+**List all your organization's repos**:
 
 ```
 set -a
