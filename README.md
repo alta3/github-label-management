@@ -18,6 +18,7 @@ Before you run the code, explore the directory you just cloned:
 
 
 The Result: all of your organizations' repsoitories will have the same github labels 
+
 ![Github labels](https://static.alta3.com/blog/github-labels.png)
 
 ## Prerequisites
