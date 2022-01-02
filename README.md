@@ -42,14 +42,14 @@ vim .env
 
 ```
 GITHUB_USER_TOKEN="xxxxxxxxxxxxxxxx"
+GITHUB_USER_NAME="yyyyyyyyyyyyyy"
 LABELS_TOKEN=${GITHUB_USER_TOKEN}
-LABELS_USERNAME="yyyyyyyyyyy"
-
+LABELS_USERNAME=${GITHUB_USER_NAME}
 ```
 
 ### Edit the labels
 
-**View the labels you are about to apply to Alta3's repos. If this is your first time through, then look, dont touch. The default labels have been working well**
+**View the labels you are about to apply to your org's repos. If this is your first time through, then look, dont touch. The default labels have been working well**
 
 ```
 vim default-labels.toml
