@@ -12,6 +12,7 @@ Before you run the code, explore the directory you just cloned:
 ├── list-all-repos.py    - Discovers all alta3 repos and clobbers existing lalels with above "default-labels.toml" Making them all identicle.
 ├── repo-labels          - Check this directory. (Look, don't touch!) These files will all overwritten soon
 └── requirements.txt     - Classic python dependancies stuff
+└── .env                 - This file is NOT HERE yet. You will add it below
 
 
 The Result: all Alta3 repsoitories will have the same github labels 
@@ -46,6 +47,15 @@ LABELS_USERNAME="yyyyyyyyyyy"
 
 ```
 
+### Edit the labels
+
+**View the labels you are about to apply to Alta3's repos. If this is your first time through, then look, dont touch. The default labels have been working well**
+
+```
+vim default-labels.toml
+```
+
+
 ### Run
 
 **List all alta3 repos**:
@@ -63,18 +73,12 @@ mkdir -p repo-labels
 python list-all-repos.py | xargs -I {} labels fetch --owner alta3 --repo {} --filename repo-labels/{}-labels.toml
 ```
 
-**View the labels you are about to apply to Alta3's repos. If this is your first time through, then look, dont touch. The default labels have been working well**
-
-```
-vim default-labels.toml
-```
-
 **Push the `default-labels.toml` to every Alta3 Repository
 
 ```
 python list-all-repos.py | xargs -I {} labels sync --owner alta3 --repo {} --filename default-labels.toml
 ```
 
-That's it!  The labels have been pushed to all reposities. 
-Don't like them?  Then edit `default-labels.toml` and run the steps again.
+That's it!  The labels have been pushed to all reposities.  
+Don't like them?  Then edit `default-labels.toml` and run the steps again.  
 
