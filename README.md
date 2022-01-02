@@ -6,6 +6,7 @@ This repo is a step-by-step guide/script for managing organization wide github i
 
 Before you run the code, explore the directory you just cloned:
 
+```
 .
 ├── README.md            - You are reading this NOW
 ├── default-labels.toml  - This is the label format that you are about to apply to ALL ALTA3 REPOS. 
@@ -13,6 +14,7 @@ Before you run the code, explore the directory you just cloned:
 ├── repo-labels          - Check this directory. (Look, don't touch!) These files will all overwritten soon
 └── requirements.txt     - Classic python dependancies stuff
 └── .env                 - This file is NOT HERE yet. You will add it below
+```
 
 
 The Result: all Alta3 repsoitories will have the same github labels 
