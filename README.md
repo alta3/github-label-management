@@ -1,9 +1,25 @@
  
-# alta3 github-automation
+# github label management
 
 This repo is a step-by-step guide/script for managing organization wide github issue labels across all projects.
 
-Result:  
+
+Before you run the code, explore the directory you just cloned:
+
+```
+.
+├── README.md            - You are reading this NOW
+├── default-labels.toml  - This is the label format that you are about to apply to ALL OF YOUR ORGANIZATIONS' REPOS. 
+├── list-all-repos.py    - Discovers all of your orgainizations repos and clobbers existing lalels with above "default-labels.toml" Making them all identicle.
+├── repo-labels          - Check this directory. (Look, don't touch!) These files will all overwritten soon
+└── requirements.txt     - Classic python dependancies stuff
+└── .env                 - This file is NOT HERE yet. You will add it below
+```
+
+
+The Result: all of your organizations' repsoitories will have the same github labels 
+
+
 ![Github labels](https://static.alta3.com/blog/github-labels.png)
 
 ## Prerequisites
@@ -22,19 +38,31 @@ python -m pip install --upgrade pip wheel
 python -m pip install -r requirements.txt
 ```
 
-**Example `.env` file**:
+**Edit your `.env` file**:
+  Replace "xxxxxxxxxxxxxx" with your token from above.
+  Replace "yyyyyyyyyyyyyy" with your user name.
+
+vim .env
 
 ```
-GITHUB_USER_TOKEN="<YOUR TOKEN HERE>"
-GITHUB_USER_NAME="<YOUR USERNAME>
+GITHUB_USER_TOKEN="xxxxxxxxxxxxxxxx"
+GITHUB_USER_NAME="yyyyyyyyyyyyyy"
 LABELS_TOKEN=${GITHUB_USER_TOKEN}
 LABELS_USERNAME=${GITHUB_USER_NAME}
+```
+
+### Edit the labels
+
+**View the labels you are about to apply to your org's repos. If this is your first time through, then look, dont touch. The default labels have been working well**
 
 ```
+vim default-labels.toml
+```
+
 
 ### Run
 
-**List all alta3 repos**:
+**List all your organization's repos**:
 
 ```
 set -a
@@ -46,13 +74,15 @@ python list-all-repos.py
 
 ```
 mkdir -p repo-labels
-python list-all-repos.py | xargs -I {} labels fetch --owner alta3 --repo {} --filename repo-labels/{}-labels.toml
+python list-all-repos.py | xargs -I {} labels fetch --owner <GITHUB ORG> --repo {} --filename repo-labels/{}-labels.toml
 ```
 
-**Setup a common set of labels for every repo**
-
-View/edit `default-labels.toml` for the list of labels.
+**Push the `default-labels.toml` to all of your organization's repositories
 
 ```
-python list-all-repos.py | xargs -I {} labels sync --owner alta3 --repo {} --filename default-labels.toml
+python list-all-repos.py | xargs -I {} labels sync --owner <GITHUB ORG> --repo {} --filename default-labels.toml
 ```
+
+That's it!  The labels have been pushed to all reposities.  
+Don't like them?  Then edit `default-labels.toml` and run the steps again.  
+
