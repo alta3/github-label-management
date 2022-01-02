@@ -72,13 +72,13 @@ python list-all-repos.py
 
 ```
 mkdir -p repo-labels
-python list-all-repos.py | xargs -I {} labels fetch --owner alta3 --repo {} --filename repo-labels/{}-labels.toml
+python list-all-repos.py | xargs -I {} labels fetch --owner <GITHUB ORG> --repo {} --filename repo-labels/{}-labels.toml
 ```
 
-**Push the `default-labels.toml` to every Alta3 Repository
+**Push the `default-labels.toml` to all of your organization's repositories
 
 ```
-python list-all-repos.py | xargs -I {} labels sync --owner alta3 --repo {} --filename default-labels.toml
+python list-all-repos.py | xargs -I {} labels sync --owner <GITHUB ORG> --repo {} --filename default-labels.toml
 ```
 
 That's it!  The labels have been pushed to all reposities.  
