@@ -12,7 +12,7 @@ Before you run the code, explore the directory you just cloned:
 ├── default-labels.toml  - This is the label format that you are about to apply to ALL OF YOUR ORGANIZATIONS' REPOS. 
 ├── list-all-repos.py    - Discovers all of your orgainizations repos and clobbers existing lalels with above "default-labels.toml" Making them all identicle.
 ├── repo-labels          - Check this directory. (Look, don't touch!) These files will all overwritten soon
-└── requirements.txt     - Classic python dependancies stuff
+├── requirements.txt     - Classic python dependancies stuff
 └── .env                 - This file is NOT HERE yet. You will add it below
 ```
 
