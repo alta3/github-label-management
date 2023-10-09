@@ -32,10 +32,10 @@ The Result: all of your organizations' repsoitories will have the same github la
 ## Install
 
 ```
-python3.8 -m venv venv
+python3 -m venv venv
 source venv/bin/activate
-python -m pip install --upgrade pip wheel
-python -m pip install -r requirements.txt
+python3 -m pip install --upgrade pip wheel
+python3 -m pip install -r requirements.txt
 ```
 
 **Edit your `.env` file**:
@@ -60,11 +60,22 @@ vim default-labels.toml
 ```
 
 
-### Run
+### Run - One project's labels
+
+```bash
+set -a
+source .env
+```
+
+```bash
+labels sync --owner {{ GITHUB_ORG }} --repo {{ GITHUB_REPO }} --filename default-labels.toml
+```
+
+### Run - All Labels
 
 **List all your organization's repos**:
 
-```
+```bash
 set -a
 source .env
 python list-all-repos.py
@@ -72,7 +83,7 @@ python list-all-repos.py
 
 **Make a backup of all current labels**
 
-```
+```bash
 mkdir -p repo-labels
 python list-all-repos.py | xargs -I {} labels fetch --owner <GITHUB ORG> --repo {} --filename repo-labels/{}-labels.toml
 ```
