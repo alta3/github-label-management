@@ -83,6 +83,11 @@ color = "cccccc"
 name = "Status: In Progress"
 description = ""
 
+["Status: Skunkworks"]
+color = "008672"
+name = "Status: Skunkworks"
+description = "Do it when you can"
+
 ["Status: Needs More Info"]
 color = "f02fff"
 name = "Status: Needs More Info"
